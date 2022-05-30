@@ -1,0 +1,67 @@
+.landing-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    font-size: 2em;
+    
+}
+
+.landing-text span {
+    color: #0f0;
+}
+
+.cv-button {
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid #0f0;
+    color: #0f0;
+    height: 38px;
+    width: 125px;
+    border-radius: 6px;
+    transition: 300ms;
+}
+
+.cv-button:hover {
+    background-color: #0f0;
+    color: black;
+    transition: 0.4s;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.cv-button:active {
+    border: 1.2px solid white;
+    transition: 0.05s;
+}
+
+
+.landing-photo {
+    position: absolute;
+    right: 40%;
+    top: 10%;
+}
+
+.bimal {
+    position: absolute;
+    z-index: 1;
+    height: 90vh;
+    width: 30vw;
+    transition: transform linear 600ms;
+}
+
+.shape {
+    position: absolute;
+    height: 70vh;
+    width: 30vw;
+    transition: transform linear 600ms;
+}
+
+.bimal:hover {
+    transform: translateX(-25px);
+}
+
+.bimal:hover+.shape {
+    transform: translateY(-25px);
+}
+

@@ -1,0 +1,65 @@
+
+.fontawesome-icon {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    overflow: hidden;
+    cursor: default;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    top: -55%;
+    display: flex;
+    padding: 10px 0;
+    transform: rotate(-30deg);
+}
+
+.row div {
+    white-space: nowrap;
+    font-size: 49px;
+    animation: fontawesome-icon-animate1 20s linear -10s infinite alternate;
+}
+
+.row i {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0 5px;
+    transition: 800ms;
+    user-select: none;
+    cursor: default;
+}
+
+.row i:hover {
+    transition: 0ms;
+    color: #0f0;
+    text-shadow: 0 0 120px #0f0;
+}
+
+
+@keyframes fontawesome-icon-animate1 {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.row:nth-child(even) div {
+    animation: fontawesome-icon-animate2 20s linear -10s infinite alternate;
+}
+
+@keyframes fontawesome-icon-animate2 {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

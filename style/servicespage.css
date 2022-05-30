@@ -1,0 +1,58 @@
+
+.ser-page {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ser-card {
+    position: relative;
+    height: 280px;
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #333;
+    /* #51446e; */
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.ser-icon {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--icon);
+    border-radius: 20px;
+    font-size: 60px;
+    color: white;
+    transition: 500ms;
+    z-index: 1;
+}
+
+.ser-card:hover .ser-icon {
+    width: 80px;
+    height: 80px;
+    top: 30px;
+    border-radius: 50%;
+}
+
+.ser-content {
+    position: relative;
+    top: 30px;
+    z-index: 0;
+    padding: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}

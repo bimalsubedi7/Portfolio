@@ -1,0 +1,79 @@
+.edu-timeline-card {
+    display: block;
+    width: 60%;
+    margin: 100px auto;
+}
+
+.timeline-card {
+    width: 40%;
+    /* height: 110px; */
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: -45px -17px;
+    color: white;
+    display: block;
+    position: relative;
+    background-color: var(--t-color);
+    cursor: pointer;
+}
+
+.timeline-card:nth-child(odd) {
+    margin-left: auto;
+}
+
+.timeline-card:nth-child(even):before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--t-color);
+    border: 5px solid #222;
+    position: absolute;
+    right: -20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline-card:nth-child(odd):before {
+    content: '';
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--t-color);
+    border: 5px solid #222;
+    position: absolute;
+    left: -20%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline-card:nth-child(even):after {
+    content: '';
+    height: 2px;
+    width: 11%;
+    background-color: white;
+    position: absolute;
+    right: -12%;
+    top: 50%;
+}
+
+.timeline-card:nth-child(odd):after {
+    content: '';
+    height: 2px;
+    width: 11%;
+    background-color: white;
+    position: absolute;
+    left: -12%;
+    top: 50%;
+}
+
+.timeline-card:nth-child(odd) .timeline-card-content::before {
+    content: '';
+    width: 0px;
+    height: 100%;
+    border: 1px dashed white;
+    position: absolute;
+    top: 0;
+    left: -16%;
+    z-index: -1;
+}
