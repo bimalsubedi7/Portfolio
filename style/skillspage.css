@@ -67,7 +67,7 @@
 	stroke-linecap: round;
 	transform: rotate(-90deg);
 	transform-origin: center;
-	animation: hello 1000ms linear forwards;
+	animation: hello 800ms linear forwards;
 }
 
 @keyframes hello {
